@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@import url('header.css');
+@import url('hero.css');
+@import url('what-we-do.css');
+@import url('accomplishment.css');
+@import url('testimonies.css');
+@import url('contact.css');
+@import url('footer.css');
+
+:root{
+  --font-poppins: 'Poppins', sans-serif;
+
+  --primary: #2639ED;
+  --black: #000000;
+  --dark-gray: #565656;
+  --light-gray: #757575;
+  --light-blue: #F1F7FF;
+  --light-orange: #FFF7E3;
+  --light-pink: #FFF2F8;
+  --light-green: #DEFFEE;
+  --white: #ffffff;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: var(--font-poppins);
+}
+
+button, input{
+  font-family: var(--font-poppins);
+}
+
+@media screen and (max-width: 576px) {
+  .header__nav,
+  .hero,
+  .what-we-do,
+  .accomplishment,
+  .contact,
+  footer{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}

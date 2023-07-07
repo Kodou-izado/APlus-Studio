@@ -1,0 +1,139 @@
+.contact{
+  overflow: hidden;
+  padding: 5rem 5rem;
+  position: relative;
+}
+
+.contact__element-one,
+.contact__element-two{
+  position: absolute;
+  z-index: -1;
+}
+
+.contact__element-one{
+  top: 0.5rem;
+  right: 3rem;
+}
+
+.contact__element-two{
+  bottom: 1.2rem;
+  left: 2.5rem;
+}
+
+.contact__newsletter{
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background-color: #F4F9FF;
+  padding: 6rem;
+  border-radius: 60px;
+  overflow: hidden;
+}
+
+.newsletter__content{
+  flex: 1.2;
+  position: relative;
+  z-index: 2;
+}
+
+.newsletter__content h1{
+  font-size: 2.2rem;
+  font-weight: 600;
+  padding-bottom: 0.7rem;
+}
+
+.newsletter__content p{
+  color: var(--light-gray);
+}
+
+.newsletter__input-wrapper{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: var(--white);
+  padding: 0.6rem 0.6rem 0.6rem 2.5rem;
+  border-radius: 100px;
+  z-index: 2
+}
+
+.newsletter__input-wrapper input{
+  flex: 1;
+  border: none;
+  outline: none;
+  color: #959595;
+  padding: 1rem 0;
+}
+
+.newsletter__input-wrapper input::placeholder{
+  color: #959595;
+}
+
+.newsletter__input-wrapper button{
+  cursor: pointer;
+  font-weight: 500;
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 1rem 1.5rem;
+  border-radius: 100px;
+  border: none;
+}
+
+.newsletter__element-one{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 992px) {
+  .contact__newsletter{
+    flex-direction: column;
+  }
+
+  .newsletter__content{
+    text-align: center;
+  }
+
+  .newsletter__input-wrapper{
+    width: 100%;
+  }
+
+  .newsletter__input-wrapper input{
+    padding: 1.3rem 1.5rem;
+    border-radius: 100px;
+  }
+
+  .newsletter__element-one{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .contact__newsletter{
+    padding: 2rem;
+  }
+
+  .newsletter__input-wrapper{
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: center;
+    background-color: transparent;
+    gap: 1rem;
+  }
+
+  .newsletter__input-wrapper button{
+    background-color: var(--white);
+    color: var(--primary);
+  }
+
+  .contact__element-two{
+    bottom: 1.2rem;
+    left: 2.5rem;
+  }
+}

@@ -1,0 +1,49 @@
+.accomplishment{
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  overflow: hidden;
+  padding: 4rem 5rem;
+}
+
+.accomplishment__video,
+.accomplishment__content{
+  flex: 1;
+  position: relative;
+}
+
+.accomplishment__video img:first-child{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.accomplishment__video--element{
+  position: absolute;
+  top: 44%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+}
+
+.accomplishment__content--element{
+  position: absolute;
+  top: -1rem;
+  left: -2rem;
+  z-index: -1;
+}
+
+.accomplishment__content h1{
+  font-size: 2.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.accomplishment__content p{
+  color: var(--dark-gray);
+  text-align: left;
+}
+
+@media screen and (max-width: 992px) {
+  .accomplishment{
+    flex-direction: column;
+  }
+}
